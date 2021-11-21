@@ -31,7 +31,7 @@ Note: by default, server.js is using your port 8080, feel free to change it in c
 ```
 ## Execute Tests
 ```
-$ npm run cy:run
+$ c
 ```
 
 Challengue Requirements:
