@@ -2,32 +2,31 @@
 //Locators
 const scrollSlide = '#scroll-prop-plan';
 const titleData = 'body > div.content-wrapper > div.section.pad-top-0.pad-bot-2 > div.container.container-md > div.property-scroll-box > div.scroll-box > div:nth-child(2) > div.slider-handle.min-slider-handle.round';
-const priceData1 = '[data-testid="phone-input"]';
-const emailData = '.eight > .ui > input';
-const Guests = '.four > .ui > input';
-const nameErrorMessage = ':nth-child(1) > :nth-child(1) > .input > .ui';
-const emailErrorMessage = '.eight > .input > .ui';
-const commentErrorMessage = ':nth-child(4) > .input > .ui';
-const datePicker= '.DateRangePickerInput_calendarIcon';
-const calendarDatePicker = '.DayPickerNavigation_rightButton__horizontalDefault > .DayPickerNavigation_svg__horizontal';
-const conmmentData = '.ui > textarea';
-const privacyPolicy = '.light';
-const sendButton = '[data-testid="form"] > [data-testid="button"]';
-const date1 = '[aria-label="Thursday, April 14, 2022"]';
-const date2 = '[aria-label="Tuesday, June 14, 2022"]';
-const successMessage = '.content > p';
-const logoTitle = '.sliding-menu-wrapper';
-const title = '.grid > :nth-child(1) > .top > .ui';
-const userImg = '[data-testid="responsive-image-img"]';
-const username = '.top > .flex-container > .header';
-const descriptionUser = '.html-container';
-const contactContainer = '.five';
-const titleContact = '.five > .header';
-const emailContact = '.medium > :nth-child(1)';
-const phoneContact = '.medium > :nth-child(2)';
-const navigationIcon = '[data-testid="navigation-icon"]';
-const menuIcon = '[data-testid="navigation-wrapper"] > .menu';
-const footer = '.bottom-navigation';
+const priceData1 = '.price-card-starter > .price-item';
+const priceData1Price = '.price-card-starter > .price-item > :nth-child(1) > .plan-price > .total-sum';
+const priceData1Label = '.price-card-starter > .price-item > :nth-child(2) > .wd-100 > .btn';
+const priceData2 = ':nth-child(2) > .price-item';
+const priceData2Price = ':nth-child(2) > .price-item > :nth-child(1) > .plan-price > .total-sum';
+const priceData2Label = ':nth-child(2) > .price-item > :nth-child(2) > .wd-100 > .btn';
+const priceData3 = ':nth-child(3) > .price-item';
+const priceData3Price = ':nth-child(3) > .price-item > :nth-child(1) > .plan-price > .total-sum';
+const priceData3Label = ':nth-child(3) > .price-item > :nth-child(2) > .wd-100 > .btn';
+const currencyLabel = '.row-sm > :nth-child(1)';
+const currencyDropdown = '.price-currency-select';
+const priceCard1 = '.price-card-starter > .price-item > :nth-child(1) > .plan-price';
+const priceCard2 = ':nth-child(2) > .price-item > :nth-child(1) > .plan-price';
+const priceCard3 = ':nth-child(3) > .price-item > :nth-child(1) > .plan-price';
+const header = '.head-top-bar > .container';
+const menuItem1 = '#menu-item-15007 > .dropdown-toggle';
+const menuItem2 = '#menu-item-13168 > .dropdown-toggle';
+const menuItem3 = '#menu-item-8806 > .dropdown-toggle';
+const menuItem4 = '#menu-item-31 > a';
+const menuItem5 = '#menu-item-32 > a';
+const pushBot = '.wd-100 > .push-bot-3';
+const properties1 = '.property-scroll-box';
+const dataPeriod1 = '[data-price-period="1"] > span';
+const dataPeriod2 = '[data-price-period="2"]';
+const dataPeriod3 = '[data-price-period="3"] > a';
 const faqQuestion1 = ':nth-child(1) > .faq-question';
 const faqQuestion2 = ':nth-child(2) > .faq-question';
 const faqQuestion3 = ':nth-child(3) > .faq-question';
@@ -44,21 +43,39 @@ const faqQuestion13 = ':nth-child(13) > .faq-question';
 const faqQuestion14 = ':nth-child(14) > .faq-question';
 const faqQuestion15 = ':nth-child(15) > .faq-question';
 const faqQuestion16 = ':nth-child(16) > .faq-question';
+const headingBox = '.sct-heading-box';
+const footerRow1 = ':nth-child(4) > .container > .row > :nth-child(1)';
+const footerRow2 = ':nth-child(4) > .container > .row > :nth-child(2)';
+const footerRow3 = ':nth-child(4) > .container > .row > :nth-child(3)';
+const navMenu2 = '#nav_menu-2';
+const navMenu3 = '#nav_menu-3';
+const navMenu4 = '#nav_menu-4';
+const navMenu5 = '#nav_menu-5';
+const cookiesAccept = '#cn-accept-cookie';
 
 
 //Test data
 
 const pricingTitle = 'Pricing';
-const nameMandatory = 'Name is mandatory';
-const emailMandatory = 'Email is mandatory';
-const commentMandatory = 'Comment is mandatory';
-const nameInfo = 'Ricardo Gomez';
-const phoneInfo = '1562588798';
-const emailInfo = 'rgomez@gmail.com';
-const commentInfo = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.';
-const privacyInfo = 'This site is protected by reCAPTCHA and the Google ';
-const successInfo = 'Your request has been sent successfully.';
-const rightsReserveInfo = 'All rights reserved';
+const pricing1 = '64';
+const pricing2 = '375';
+const pricing3 = '518';
+const labelPricing1 = 'Get Started';
+const labelPricing2 = 'Get';
+const labelPricing3 = 'Started';
+const labelCurrencies = 'Do you want to see other currencies?';
+const eurosCurrency = 'eur';
+const eurosPricing1= '60€';
+const eurosPricing2 = '330€';
+const eurosPricing3 = '466€';
+const gbpCurrency = 'gbp';
+const gbpPricing1 = '£51';
+const gbpPricing2 = '£294';
+const gbpPricing3 = '£414';
+const usdCurrency = 'usd';
+const usdPricing1 = '$64';
+const usdPricing2 = '$375';
+const usdPricing3 = '$518';
 
 export class pricingPage  {
     static pricingTest1 (){
@@ -69,93 +86,93 @@ export class pricingPage  {
             cy.get(scrollSlide).type(50)
             cy.get(titleData)
                 .should('be.visible').and('exist')
-            cy.get()
+            cy.get(priceData1)
                 .should('be.visible').and('exist')
-            cy.get('.price-card-starter > .price-item > :nth-child(1) > .plan-price > .total-sum')
-                .should('be.visible').and('contain', '64' )
-            cy.get('.price-card-starter > .price-item > :nth-child(2) > .wd-100 > .btn')
-                .should('be.visible').and('contain', 'Get Started')
-            cy.get(':nth-child(2) > .price-item')
+            cy.get(priceData1Price)
+                .should('be.visible').and('contain',  pricing1)
+            cy.get(priceData1Label)
+                .should('be.visible').and('contain', labelPricing1)
+            cy.get(priceData2)
                 .should('be.visible').and('exist')
-            cy.get(':nth-child(2) > .price-item > :nth-child(1) > .plan-price > .total-sum')
-                .should('be.visible').and('contain', '375' )
-            cy.get(':nth-child(2) > .price-item > :nth-child(2) > .wd-100 > .btn')
-                .should('be.visible').and('contain', 'Get')
-            cy.get(':nth-child(3) > .price-item')
+            cy.get(priceData2Price)
+                .should('be.visible').and('contain', pricing2)
+            cy.get(priceData2Label)
+                .should('be.visible').and('contain', labelPricing2)
+            cy.get(priceData3)
                 .should('be.visible').and('exist')
-            cy.get(':nth-child(3) > .price-item > :nth-child(1) > .plan-price > .total-sum')
-                .should('be.visible').and('contain', '518' )
-            cy.get(':nth-child(3) > .price-item > :nth-child(2) > .wd-100 > .btn')
-                .should('be.visible').and('contain', 'Started')
+            cy.get(priceData3Price)
+                .should('be.visible').and('contain', pricing3 )
+            cy.get(priceData3Label)
+                .should('be.visible').and('contain', labelPricing3)
               
           })
         }
         static pricingTest2 (){
           it('Test 2 - Checking currencies', () => {
             cy.title().should('include', 'Pricing');
-            cy.get('.row-sm > :nth-child(1)')
-              .should('be.visible').and('contain', 'Do you want to see other currencies?')
-            cy.get('.price-currency-select')
-              .select('eur')
-            cy.get('.price-card-starter > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '60€' )
-            cy.get(':nth-child(2) > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '330€' )
-            cy.get(':nth-child(3) > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '466€' )
-            cy.get('.row-sm > :nth-child(1)')
-                .should('be.visible').and('contain', 'Do you want to see other currencies?')
-            cy.get('.price-currency-select')
-                .select('gbp')
-            cy.get('.price-card-starter > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '£51' )
-            cy.get(':nth-child(2) > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '£294' )
-            cy.get(':nth-child(3) > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '£414' )
-            cy.get('.row-sm > :nth-child(1)')
-                .should('be.visible').and('contain', 'Do you want to see other currencies?')
-            cy.get('.price-currency-select')
-                .select('usd')
-                cy.get('.price-card-starter > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '$64' )
-            cy.get(':nth-child(2) > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '$375' )
-            cy.get(':nth-child(3) > .price-item > :nth-child(1) > .plan-price')
-                .should('be.visible').and('contain', '$518' )
+            cy.get(currencyLabel)
+              .should('be.visible').and('contain', labelCurrencies)
+            cy.get(currencyDropdown)
+              .select(eurosCurrency)
+            cy.get(priceCard1)
+                .should('be.visible').and('contain',  eurosPricing1)
+            cy.get(priceCard2)
+                .should('be.visible').and('contain', eurosPricing2 )
+            cy.get(priceCard3)
+                .should('be.visible').and('contain', eurosPricing3)
+            cy.get(currencyLabel)
+                .should('be.visible').and('contain', labelCurrencies)
+            cy.get(currencyDropdown)
+                .select(gbpCurrency)
+            cy.get(priceCard1)
+                .should('be.visible').and('contain', gbpPricing1 )
+            cy.get(priceCard2)
+                .should('be.visible').and('contain', gbpPricing2 )
+            cy.get(priceCard3)
+                .should('be.visible').and('contain',gbpPricing3)
+            cy.get(currencyLabel)
+                .should('be.visible').and('contain', labelCurrencies)
+            cy.get(currencyDropdown)
+                .select(usdCurrency)
+            cy.get(priceCard1)
+                .should('be.visible').and('contain', usdPricing1)
+            cy.get(priceCard2)
+                .should('be.visible').and('contain', usdPricing2 )
+            cy.get(priceCard3)
+                .should('be.visible').and('contain', usdPricing3 )
         
             
             })
         }
         static pricingTest3 (){
             it('Test 3 - Other page tests', () => {
-                cy.get('.head-top-bar > .container')
+                cy.get(header)
                     .should('be.visible').and('exist')
-                cy.get('#menu-item-15007 > .dropdown-toggle')
+                cy.get(menuItem1)
                     .should('be.visible').and('exist')
-                cy.get('#menu-item-13168 > .dropdown-toggle')
+                cy.get(menuItem2)
                     .should('be.visible').and('exist')
-                cy.get('#menu-item-8806 > .dropdown-toggle')
+                cy.get(menuItem3)
                     .should('be.visible').and('exist')
-                cy.get('#menu-item-31 > a')
+                cy.get(menuItem4)
                     .should('be.visible').and('exist')
-                cy.get('#menu-item-32 > a')
+                cy.get(menuItem5)
                     .should('be.visible').and('exist')
-                cy.get('.wd-100 > .push-bot-3')
+                cy.get(pushBot)
                     .should('be.visible').and('exist')
-                cy.get('.property-scroll-box')
+                cy.get(properties1)
                     .should('be.visible').and('exist')
-                cy.get('[data-price-period="1"] > span')
+                cy.get(dataPeriod1)
                     .should('be.visible').and('exist')
-                cy.get('[data-price-period="1"] > span')
+                cy.get(dataPeriod1)
                     .click({force:true})
-                cy.get('[data-price-period="2"]')
+                cy.get(dataPeriod2)
                     .should('be.visible').and('exist')
-                cy.get('[data-price-period="2"]')
+                cy.get(dataPeriod2)
                     .click({force:true})
-                cy.get('[data-price-period="3"] > a')
+                cy.get(dataPeriod3)
                     .should('be.visible').and('exist')
-                cy.get('[data-price-period="3"] > a')
+                cy.get(dataPeriod3)
                     .click({force:true})
                 cy.get(faqQuestion1)
                     .click({force:true})
@@ -189,32 +206,29 @@ export class pricingPage  {
                     .click({force:true})
                 cy.get(faqQuestion16)
                     .click({force:true})
-                cy.get('.sct-heading-box')
+                cy.get(headingBox)
                     .should('be.visible').and('exist')
-                cy.get(':nth-child(4) > .container > .row > :nth-child(1)')
+                cy.get(footerRow1)
                     .should('be.visible').and('exist')
-                cy.get(':nth-child(4) > .container > .row > :nth-child(2)')
+                cy.get(footerRow2)
                     .should('be.visible').and('exist')
-                cy.get(':nth-child(4) > .container > .row > :nth-child(3)')
+                cy.get(footerRow3)
                     .should('be.visible').and('exist')
-                cy.get('#nav_menu-2')
+                cy.get(navMenu2)
                     .should('be.visible').and('exist')
-                cy.get('#nav_menu-3')
+                cy.get(navMenu3)
                     .should('be.visible').and('exist')
-                cy.get('#nav_menu-4')
+                cy.get(navMenu4)
                     .should('be.visible').and('exist')
-                cy.get('#nav_menu-5')
+                cy.get(navMenu5)
                     .should('be.visible').and('exist')
-                cy.get('#cn-accept-cookie')
+                cy.get(cookiesAccept)
                     .should('be.visible').and('exist')
-                cy.get('#cn-accept-cookie')
+                cy.get(cookiesAccept)
                     .click({force:true})
-        
-            
+
                 
                 })
-
-
         
     }
 

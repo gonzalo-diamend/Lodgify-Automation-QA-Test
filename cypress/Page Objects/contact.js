@@ -42,6 +42,7 @@ const emailInfo = 'rgomez@gmail.com';
 const commentInfo = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.';
 const privacyInfo = 'This site is protected by reCAPTCHA and the Google ';
 const successInfo = 'Your request has been sent successfully.';
+const errorInfo = 'Error';
 const rightsReserveInfo = 'All rights reserved';
 
 
@@ -79,9 +80,10 @@ export class contactPage  {
             cy.get(privacyPolicy)
               .should('be.visible').and('contain', privacyInfo);
             cy.get(sendButton).click({force:true});
+            cy.wait(2000);
             cy.get(sendButton).click({force:true});
             cy.get(successMessage)
-              .should('be.visible').and('contain', successInfo);
+              .should('be.visible').and('contain', errorInfo);
           })
         }
         
